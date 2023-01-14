@@ -1,0 +1,14 @@
+server { 
+    listen 80; 
+    server_name jenkins.sister24.site; 
+    
+    location / { 
+        root /var/www/config-nginx-centos-sample/; 
+        index index.php index.html index.htm;
+        proxy_pass "http://localhost:8080/";
+
+    } 
+    
+    error_page 500 502 503 504 /50x.html;     
+    location = /50x.html { root html; } 
+}
