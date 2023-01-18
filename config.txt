@@ -1,1 +1,2 @@
-Create a new Branch in Github with Jira
+1. Create a new Branch in Github with Jira
+2. How to see the workflow between Jira and Github
